@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang=en>   
+       
+    <head> 
+    <meta charset="UTF-8">
+	<title>WhiteLens</title>
+        <style>         
+              
+        html {
+            background: linear-gradient(to right, #232526, #414345);
+        }
+        #tabmenu {
+            margin: 0;
+            padding: 0;        
+            display: table;
+            width: 100%;
+        }
+        
+        .tab {
+            display: table-cell;
+        }
+
+        .tab a {
+            display: block;
+            min-width: 140px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 24px;
+            color: #fff;
+            background: linear-gradient(to top, #2f3133, #3c3e40);
+            text-decoration: none;           
+        }
+
+        .tab:hover a {
+            background: linear-gradient(to top, #5f6265, #5c5f62); 
+        }
+            
+        .sitedesc {        
+            width: 60%;
+            padding-left: 20%;
+            padding-right: 20%;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            text-align: center;
+            color: #fff;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 18px;
+            background: linear-gradient(to top, #2f3133, #3c3e40);         
+        }
+            
+        .sliders {
+            display: inline-block;
+            width: 33%;
+        }       
+
+        </style>
+  
+    </head>
+    
+    
+        
+        <ul id="tabmenu">
+            <li class = "tab"><a href="Homepage.html">Homepage</a></li>
+            <li class = "tab"><a href="Creators.html">Creators</a></li>
+            <li class = "tab"><a href="ContactUs.html">Contact Us</a></li>
+        </ul> 
+    
+ 
+
+        <p class=sitedesc>Welcome to WhiteLens! Feel free to browse our collection of photography and artwork and we hope you find something that catches your eye! If you would like more information on any of our Artists/Creators, you can go to their "Creator Page" where you will be able to find more information about them and their work!
+        </p>
+
+        <div style="min-width: 800px">
+            <div class=sliders>
+                <img class="slides" src="imgs/ohw%20(5).jpg" alt="Pork roulade" style="width:100%">
+                <img class="slides" src="imgs/ohw%20(7).jpg" alt="Squid-ink pasta" style="width:100%">
+                <img class="slides" src="imgs/ohw%20(2).jpg" alt="Bacon-wrapped Chicken with sweet potato fries, slaw and sweetcorn" style="width:100%">
+                <button  onclick="plusDivs(-1)" style="width:48%; margin-top: 5px; background: linear-gradient(to top, #2f3133, #3c3e40); color: white">&#10094;</button>
+                <button  onclick="plusDivs(1)" style="width:48%; float: right; margin-top: 5px; background: linear-gradient(to top, #2f3133, #3c3e40); color: white">&#10095;</button>
+            </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(y) {
+                    showDivs(slideIndex += y);
+                }
+
+                function showDivs(y) {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    if (y > x.length) {
+                        slideIndex = 1
+                    }
+                    if (y < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    x[slideIndex-1].style.display = "block";  
+                }
+            </script>
+
+            <div class=sliders>
+                <img class="slides2" src="imgs/dc%20(3).jpg" alt="2 torso molds in black cement" style="width:100%">
+                <img class="slides2" src="imgs/dc%20(7).jpg" alt="full torso mold with a green and blue glaze" style="width:100%">
+                <img class="slides2" src="imgs/dc%20(4).jpg" alt="hip and hands mold" style="width:100%">
+                <button  onclick="plusDivs2(-1)" style="width:48%; margin-top: 5px;background: linear-gradient(to top, #2f3133, #3c3e40); color: white">&#10094;</button>
+                <button  onclick="plusDivs2(1)" style="width:48%; float: right; margin-top: 5px;background: linear-gradient(to top, #2f3133, #3c3e40); color: white">&#10095;</button>
+            </div>
+
+            <script>
+                var slideIndex2 = 1;
+                showDivs2(slideIndex2);
+
+                function plusDivs2(y) {
+                    showDivs2(slideIndex2 += y);
+                }
+
+                function showDivs2(y) {
+                    var i;
+                    var x = document.getElementsByClassName("slides2");
+                    if (y > x.length) {
+                        slideIndex2 = 1
+                    }
+                    if (y < 1) {
+                        slideIndex2 = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    x[slideIndex2-1].style.display = "block";  
+                }
+            </script>
+
+            <div class=sliders>
+                <img class="slides3" src="imgs/rhw%20(3).jpg" alt="sketch and watercolour of a womans face" style="width:100%">
+                <img class="slides3" src="imgs/rhw%20(2).jpg" alt="pencil and ink sketch of a giant werewolf man and his owner" style="width:100%">
+                <img class="slides3" src="imgs/rhw%20(6).jpg" alt="pen drawing of an ogre hanging in a cage in a tower" style="width:100%">
+                <button  onclick="plusDivs3(-1)" style="width:48%; margin-top: 5px;background: linear-gradient(to top, #2f3133, #3c3e40); color: white">&#10094;</button>
+                <button  onclick="plusDivs3(1)" style="width:48%; float: right; margin-top: 5px;background: linear-gradient(to top, #2f3133, #3c3e40); color: white">&#10095;</button>
+            </div>
+
+            <script>
+                var slideIndex3 = 1;
+                showDivs3(slideIndex3);
+
+                function plusDivs3(y) {
+                    showDivs3(slideIndex3 += y);
+                }
+
+                function showDivs3(y) {
+                    var i;
+                    var x = document.getElementsByClassName("slides3");
+                    if (y > x.length) {
+                        slideIndex3 = 1
+                    }
+                    if (y < 1) {
+                        slideIndex3 = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                    }
+                    x[slideIndex3-1].style.display = "block";  
+                }
+            </script>
+           </div> 
+        
+        <p class=sitedesc>
+            If you would like to become one of our featured creators and get your content the attention it deserves, feel free to contact us! <br/> <br/> 
+            Click <a href="SiteInfo.html" style="color: skyblue"> Here </a>for more information about our site.
+        </p>        
+    
+</html>
